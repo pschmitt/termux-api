@@ -48,3 +48,23 @@ On-device smoke tests cover battery status with the API app already running,
 battery status after force-stopping it (broadcast fallback), and toast delivery.
 
 No permissions or shared-UID authorization checks have been relaxed.
+
+## Updates
+
+This app has no updater of its own and no Shizuku dependency. The core app updates
+it from its Settings > Updates screen (see the core's `docs/en/self-update.md`), on
+request only, and only when the app is already installed.
+
+To make that possible this repository does two things:
+
+- The manifest carries the meta-data `dev.pschmitt.termux.GIT_REVISION`, with the value
+  `git-<commit>` of the build (`-dirty` is appended for uncommitted changes and
+  `git-unknown` when the revision is not known). Builds from a tree without `.git`
+  must set `TERMUX_GIT_REVISION` (or `-PgitRevision=`) to a hex commit. A dirty or
+  unknown build is never offered an update.
+- `.github/workflows/latest_release.yml` publishes each push to `main` as the rolling
+  `latest` prerelease with one APK named `termux-api-app_debug.apk`, `SHA256SUMS` over it, and the full
+  commit in the release notes. The feed exists once that workflow has run on `main`.
+
+The shared user id and the signing certificate must match the core's: the core refuses
+any APK that does not, and an update ends the processes of all three apps.
