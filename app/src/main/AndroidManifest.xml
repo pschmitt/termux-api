@@ -17,6 +17,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" tools:ignore="ScopedStorage" />
     <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.READ_CALL_LOG" />
     <uses-permission android:name="android.permission.READ_CONTACTS"/>
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
@@ -142,7 +143,7 @@
         <!-- If you see "Unresolved package" errors for ReportActivity with manifest placeholder,
              ignore it. Android Studio linter is broken and correct package name will be used at build time. -->
         <activity
-            android:name="${TERMUX_PACKAGE_NAME}.shared.activities.ReportActivity"
+            android:name="com.termux.shared.activities.ReportActivity"
             android:exported="false"
             android:documentLaunchMode="intoExisting"
             android:theme="@style/Theme.MarkdownViewActivity.DayNight"
@@ -163,7 +164,7 @@
             android:exported="false" />
 
         <receiver
-            android:name="${TERMUX_PACKAGE_NAME}.shared.activities.ReportActivity$ReportActivityBroadcastReceiver"
+            android:name="com.termux.shared.activities.ReportActivity$ReportActivityBroadcastReceiver"
             android:exported="false"
             tools:ignore="MissingClass" />
 
