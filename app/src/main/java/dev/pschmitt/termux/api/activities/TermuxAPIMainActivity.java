@@ -55,9 +55,14 @@ public class TermuxAPIMainActivity extends AppCompatActivity {
         AppCompatActivityUtils.setToolbarTitle(this, com.termux.shared.R.id.toolbar, TermuxConstants.TERMUX_API_APP_NAME, 0);
 
         TextView pluginInfo = findViewById(R.id.textview_plugin_info);
-        pluginInfo.setText(getString(R.string.plugin_info, TermuxConstants.TERMUX_GITHUB_REPO_URL,
-                TermuxConstants.TERMUX_API_GITHUB_REPO_URL, TermuxConstants.TERMUX_API_APT_PACKAGE_NAME,
-                TermuxConstants.TERMUX_API_APT_GITHUB_REPO_URL));
+        pluginInfo.setText(getString(R.string.plugin_info,
+                "https://github.com/pschmitt/termuxpp-app",
+                "https://github.com/pschmitt/termux-api",
+                TermuxConstants.TERMUX_API_APT_PACKAGE_NAME,
+                "https://github.com/pschmitt/termux-api-package",
+                "https://github.com/termux/termux-app",
+                "https://github.com/termux/termux-api",
+                "https://github.com/termux/termux-api-package"));
 
         mBatteryOptimizationNotDisabledWarning = findViewById(R.id.textview_battery_optimization_not_disabled_warning);
         mDisableBatteryOptimization = findViewById(R.id.btn_disable_battery_optimizations);
