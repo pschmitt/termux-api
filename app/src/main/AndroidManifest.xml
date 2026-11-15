@@ -148,7 +148,7 @@
         <!-- If you see "Unresolved package" errors for ReportActivity with manifest placeholder,
              ignore it. Android Studio linter is broken and correct package name will be used at build time. -->
         <activity
-            android:name="com.termux.shared.activities.ReportActivity"
+            android:name="dev.pschmitt.termux.shared.activities.ReportActivity"
             android:exported="false"
             android:documentLaunchMode="intoExisting"
             android:theme="@style/Theme.MarkdownViewActivity.DayNight"
@@ -169,7 +169,7 @@
             android:exported="false" />
 
         <receiver
-            android:name="com.termux.shared.activities.ReportActivity$ReportActivityBroadcastReceiver"
+            android:name="dev.pschmitt.termux.shared.activities.ReportActivity$ReportActivityBroadcastReceiver"
             android:exported="false"
             tools:ignore="MissingClass" />
 

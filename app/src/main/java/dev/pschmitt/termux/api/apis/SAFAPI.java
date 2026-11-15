@@ -17,8 +17,8 @@ import androidx.documentfile.provider.DocumentFile;
 
 import dev.pschmitt.termux.api.TermuxApiReceiver;
 import dev.pschmitt.termux.api.util.ResultReturner;
-import com.termux.shared.data.IntentUtils;
-import com.termux.shared.logger.Logger;
+import dev.pschmitt.termux.shared.data.IntentUtils;
+import dev.pschmitt.termux.shared.logger.Logger;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;

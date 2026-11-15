@@ -14,7 +14,7 @@ import android.hardware.fingerprint.FingerprintManager;
 import androidx.fragment.app.FragmentActivity;
 
 import dev.pschmitt.termux.api.util.ResultReturner;
-import com.termux.shared.logger.Logger;
+import dev.pschmitt.termux.shared.logger.Logger;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -17,15 +17,15 @@ import android.util.JsonWriter;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.termux.shared.android.PackageUtils;
-import com.termux.shared.data.IntentUtils;
-import com.termux.shared.errors.Error;
-import com.termux.shared.file.FileUtils;
-import com.termux.shared.file.filesystem.FileType;
-import com.termux.shared.logger.Logger;
-import com.termux.shared.markdown.MarkdownUtils;
-import com.termux.shared.termux.TermuxConstants;
-import com.termux.shared.termux.plugins.TermuxPluginUtils;
+import dev.pschmitt.termux.shared.android.PackageUtils;
+import dev.pschmitt.termux.shared.data.IntentUtils;
+import dev.pschmitt.termux.shared.errors.Error;
+import dev.pschmitt.termux.shared.file.FileUtils;
+import dev.pschmitt.termux.shared.file.filesystem.FileType;
+import dev.pschmitt.termux.shared.logger.Logger;
+import dev.pschmitt.termux.shared.markdown.MarkdownUtils;
+import dev.pschmitt.termux.shared.termux.TermuxConstants;
+import dev.pschmitt.termux.shared.termux.plugins.TermuxPluginUtils;
 
 import java.io.ByteArrayOutputStream;
 import java.io.FileDescriptor;

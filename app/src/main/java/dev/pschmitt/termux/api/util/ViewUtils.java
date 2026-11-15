@@ -8,7 +8,7 @@ import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
 
 import dev.pschmitt.termux.api.R;
-import com.termux.shared.theme.ThemeUtils;
+import dev.pschmitt.termux.shared.theme.ThemeUtils;
 
 public class ViewUtils {
 
@@ -16,8 +16,8 @@ public class ViewUtils {
                                                         @NonNull TextView textView, @NonNull Button button,
                                                         boolean warningState, String text) {
         if (warningState) {
-            textView.setTextColor(ContextCompat.getColor(context, com.termux.shared.R.color.red_error));
-            textView.setLinkTextColor(ContextCompat.getColor(context, com.termux.shared.R.color.red_error_link));
+            textView.setTextColor(ContextCompat.getColor(context, dev.pschmitt.termux.shared.R.color.red_error));
+            textView.setLinkTextColor(ContextCompat.getColor(context, dev.pschmitt.termux.shared.R.color.red_error_link));
             button.setEnabled(true);
             button.setAlpha(1);
         } else {

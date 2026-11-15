@@ -10,17 +10,17 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 
 import dev.pschmitt.termux.api.R;
-import com.termux.shared.activities.ReportActivity;
-import com.termux.shared.file.FileUtils;
-import com.termux.shared.models.ReportInfo;
-import com.termux.shared.interact.ShareUtils;
-import com.termux.shared.android.PackageUtils;
-import com.termux.shared.termux.settings.preferences.TermuxAPIAppSharedPreferences;
-import com.termux.shared.android.AndroidUtils;
-import com.termux.shared.termux.TermuxConstants;
-import com.termux.shared.termux.TermuxUtils;
-import com.termux.shared.activity.media.AppCompatActivityUtils;
-import com.termux.shared.theme.NightMode;
+import dev.pschmitt.termux.shared.activities.ReportActivity;
+import dev.pschmitt.termux.shared.file.FileUtils;
+import dev.pschmitt.termux.shared.models.ReportInfo;
+import dev.pschmitt.termux.shared.interact.ShareUtils;
+import dev.pschmitt.termux.shared.android.PackageUtils;
+import dev.pschmitt.termux.shared.termux.settings.preferences.TermuxAPIAppSharedPreferences;
+import dev.pschmitt.termux.shared.android.AndroidUtils;
+import dev.pschmitt.termux.shared.termux.TermuxConstants;
+import dev.pschmitt.termux.shared.termux.TermuxUtils;
+import dev.pschmitt.termux.shared.activity.media.AppCompatActivityUtils;
+import dev.pschmitt.termux.shared.theme.NightMode;
 
 public class TermuxAPISettingsActivity extends AppCompatActivity {
 
@@ -38,7 +38,7 @@ public class TermuxAPISettingsActivity extends AppCompatActivity {
                 .commit();
         }
 
-        AppCompatActivityUtils.setToolbar(this, com.termux.shared.R.id.toolbar);
+        AppCompatActivityUtils.setToolbar(this, dev.pschmitt.termux.shared.R.id.toolbar);
         AppCompatActivityUtils.setShowBackButtonInActionBar(this, true);
     }
 

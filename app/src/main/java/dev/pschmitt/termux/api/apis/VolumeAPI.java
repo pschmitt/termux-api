@@ -8,7 +8,7 @@ import android.util.SparseArray;
 
 import dev.pschmitt.termux.api.TermuxApiReceiver;
 import dev.pschmitt.termux.api.util.ResultReturner;
-import com.termux.shared.logger.Logger;
+import dev.pschmitt.termux.shared.logger.Logger;
 
 import java.io.IOException;
 

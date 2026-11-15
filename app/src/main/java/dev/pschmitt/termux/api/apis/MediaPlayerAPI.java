@@ -8,7 +8,7 @@ import android.os.IBinder;
 import android.os.PowerManager;
 
 import dev.pschmitt.termux.api.util.ResultReturner;
-import com.termux.shared.logger.Logger;
+import dev.pschmitt.termux.shared.logger.Logger;
 
 import java.io.File;
 import java.io.IOException;

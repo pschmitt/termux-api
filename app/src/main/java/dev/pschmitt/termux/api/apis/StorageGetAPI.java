@@ -10,12 +10,12 @@ import androidx.annotation.Nullable;
 
 import dev.pschmitt.termux.api.TermuxApiReceiver;
 import dev.pschmitt.termux.api.util.ResultReturner;
-import com.termux.shared.data.IntentUtils;
-import com.termux.shared.errors.Error;
-import com.termux.shared.file.FileUtils;
-import com.termux.shared.logger.Logger;
-import com.termux.shared.termux.TermuxConstants;
-import com.termux.shared.termux.file.TermuxFileUtils;
+import dev.pschmitt.termux.shared.data.IntentUtils;
+import dev.pschmitt.termux.shared.errors.Error;
+import dev.pschmitt.termux.shared.file.FileUtils;
+import dev.pschmitt.termux.shared.logger.Logger;
+import dev.pschmitt.termux.shared.termux.TermuxConstants;
+import dev.pschmitt.termux.shared.termux.file.TermuxFileUtils;
 
 import java.io.FileOutputStream;
 import java.io.IOException;

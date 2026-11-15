@@ -5,10 +5,10 @@ import android.content.Context;
 import android.util.Log;
 
 import dev.pschmitt.termux.api.util.ResultReturner;
-import com.termux.shared.logger.Logger;
-import com.termux.shared.termux.TermuxConstants;
-import com.termux.shared.termux.crash.TermuxCrashUtils;
-import com.termux.shared.termux.settings.preferences.TermuxAPIAppSharedPreferences;
+import dev.pschmitt.termux.shared.logger.Logger;
+import dev.pschmitt.termux.shared.termux.TermuxConstants;
+import dev.pschmitt.termux.shared.termux.crash.TermuxCrashUtils;
+import dev.pschmitt.termux.shared.termux.settings.preferences.TermuxAPIAppSharedPreferences;
 
 
 public class TermuxAPIApplication extends Application {

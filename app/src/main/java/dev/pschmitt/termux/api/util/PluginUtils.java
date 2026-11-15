@@ -3,8 +3,8 @@ package dev.pschmitt.termux.api.util;
 import android.app.PendingIntent;
 import android.content.Context;
 
-import com.termux.shared.termux.settings.preferences.TermuxPreferenceConstants.TERMUX_API_APP;
-import com.termux.shared.termux.settings.preferences.TermuxAPIAppSharedPreferences;
+import dev.pschmitt.termux.shared.termux.settings.preferences.TermuxPreferenceConstants.TERMUX_API_APP;
+import dev.pschmitt.termux.shared.termux.settings.preferences.TermuxAPIAppSharedPreferences;
 
 public class PluginUtils {
 

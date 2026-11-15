@@ -45,12 +45,12 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 import dev.pschmitt.termux.api.R;
 import dev.pschmitt.termux.api.util.ResultReturner;
 import dev.pschmitt.termux.api.activities.TermuxApiPermissionActivity;
-import com.termux.shared.logger.Logger;
-import com.termux.shared.termux.TermuxConstants;
-import com.termux.shared.termux.theme.TermuxThemeUtils;
-import com.termux.shared.theme.NightMode;
-import com.termux.shared.theme.ThemeUtils;
-import com.termux.shared.view.KeyboardUtils;
+import dev.pschmitt.termux.shared.logger.Logger;
+import dev.pschmitt.termux.shared.termux.TermuxConstants;
+import dev.pschmitt.termux.shared.termux.theme.TermuxThemeUtils;
+import dev.pschmitt.termux.shared.theme.NightMode;
+import dev.pschmitt.termux.shared.theme.ThemeUtils;
+import dev.pschmitt.termux.shared.view.KeyboardUtils;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;

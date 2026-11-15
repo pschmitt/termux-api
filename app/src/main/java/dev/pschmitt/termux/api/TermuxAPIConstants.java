@@ -1,8 +1,8 @@
 package dev.pschmitt.termux.api;
 
-import com.termux.shared.termux.TermuxConstants;
-import static com.termux.shared.termux.TermuxConstants.TERMUX_API_PACKAGE_NAME;
-import static com.termux.shared.termux.TermuxConstants.TERMUX_PACKAGE_NAME;
+import dev.pschmitt.termux.shared.termux.TermuxConstants;
+import static dev.pschmitt.termux.shared.termux.TermuxConstants.TERMUX_API_PACKAGE_NAME;
+import static dev.pschmitt.termux.shared.termux.TermuxConstants.TERMUX_PACKAGE_NAME;
 
 public class TermuxAPIConstants {
 
@@ -12,6 +12,6 @@ public class TermuxAPIConstants {
     public static final String TERMUX_API_RECEIVER_NAME = TERMUX_API_PACKAGE_NAME + ".TermuxApiReceiver"; // Default to "dev.pschmitt.termux.api.TermuxApiReceiver"
 
     /** The Uri authority for Termux:API app file shares */
-    public static final String TERMUX_API_FILE_SHARE_URI_AUTHORITY = TERMUX_PACKAGE_NAME + ".sharedfiles"; // Default: "com.termux.sharedfiles"
+    public static final String TERMUX_API_FILE_SHARE_URI_AUTHORITY = TERMUX_PACKAGE_NAME + ".sharedfiles"; // Default: "dev.pschmitt.termux.sharedfiles"
 
 }

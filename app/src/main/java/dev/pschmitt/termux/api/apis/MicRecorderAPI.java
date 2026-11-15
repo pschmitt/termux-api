@@ -12,7 +12,7 @@ import android.util.SparseArray;
 import android.util.SparseIntArray;
 
 import dev.pschmitt.termux.api.util.ResultReturner;
-import com.termux.shared.logger.Logger;
+import dev.pschmitt.termux.shared.logger.Logger;
 
 import org.json.JSONException;
 import org.json.JSONObject;

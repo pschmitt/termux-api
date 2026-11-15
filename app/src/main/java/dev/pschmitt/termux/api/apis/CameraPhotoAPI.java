@@ -22,10 +22,10 @@ import android.view.WindowManager;
 
 import dev.pschmitt.termux.api.TermuxApiReceiver;
 import dev.pschmitt.termux.api.util.ResultReturner;
-import com.termux.shared.errors.Error;
-import com.termux.shared.file.FileUtils;
-import com.termux.shared.logger.Logger;
-import com.termux.shared.termux.file.TermuxFileUtils;
+import dev.pschmitt.termux.shared.errors.Error;
+import dev.pschmitt.termux.shared.file.FileUtils;
+import dev.pschmitt.termux.shared.logger.Logger;
+import dev.pschmitt.termux.shared.termux.file.TermuxFileUtils;
 
 import java.io.File;
 import java.io.FileOutputStream;

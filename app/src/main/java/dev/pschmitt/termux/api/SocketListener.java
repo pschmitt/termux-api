@@ -5,8 +5,8 @@ import android.content.Intent;
 import android.net.LocalServerSocket;
 import android.net.LocalSocket;
 
-import com.termux.shared.logger.Logger;
-import com.termux.shared.termux.TermuxConstants;
+import dev.pschmitt.termux.shared.logger.Logger;
+import dev.pschmitt.termux.shared.termux.TermuxConstants;
 
 import java.io.BufferedWriter;
 import java.io.DataInputStream;

@@ -15,10 +15,10 @@ import android.text.TextUtils;
 
 import dev.pschmitt.termux.api.TermuxApiReceiver;
 import dev.pschmitt.termux.api.util.ResultReturner;
-import com.termux.shared.logger.Logger;
-import com.termux.shared.shell.command.ExecutionCommand;
-import com.termux.shared.termux.TermuxConstants;
-import com.termux.shared.termux.TermuxConstants.TERMUX_APP.TERMUX_SERVICE;
+import dev.pschmitt.termux.shared.logger.Logger;
+import dev.pschmitt.termux.shared.shell.command.ExecutionCommand;
+import dev.pschmitt.termux.shared.termux.TermuxConstants;
+import dev.pschmitt.termux.shared.termux.TermuxConstants.TERMUX_APP.TERMUX_SERVICE;
 
 import java.io.File;
 import java.io.PrintWriter;

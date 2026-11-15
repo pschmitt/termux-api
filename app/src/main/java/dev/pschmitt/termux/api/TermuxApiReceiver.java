@@ -47,11 +47,11 @@ import dev.pschmitt.termux.api.apis.WallpaperAPI;
 import dev.pschmitt.termux.api.apis.WifiAPI;
 import dev.pschmitt.termux.api.activities.TermuxApiPermissionActivity;
 import dev.pschmitt.termux.api.util.ResultReturner;
-import com.termux.shared.data.IntentUtils;
-import com.termux.shared.logger.Logger;
-import com.termux.shared.markdown.MarkdownUtils;
-import com.termux.shared.termux.TermuxConstants;
-import com.termux.shared.termux.plugins.TermuxPluginUtils;
+import dev.pschmitt.termux.shared.data.IntentUtils;
+import dev.pschmitt.termux.shared.logger.Logger;
+import dev.pschmitt.termux.shared.markdown.MarkdownUtils;
+import dev.pschmitt.termux.shared.termux.TermuxConstants;
+import dev.pschmitt.termux.shared.termux.plugins.TermuxPluginUtils;
 
 public class TermuxApiReceiver extends BroadcastReceiver {
 

@@ -18,7 +18,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import dev.pschmitt.termux.api.util.PendingIntentUtils;
 import dev.pschmitt.termux.api.util.ResultReturner;
-import com.termux.shared.logger.Logger;
+import dev.pschmitt.termux.shared.logger.Logger;
 
 public class NfcAPI {
 

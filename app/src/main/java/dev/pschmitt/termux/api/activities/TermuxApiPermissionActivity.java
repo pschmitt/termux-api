@@ -7,9 +7,9 @@ import android.text.TextUtils;
 import android.util.JsonWriter;
 
 import dev.pschmitt.termux.api.util.ResultReturner;
-import com.termux.shared.android.PermissionUtils;
-import com.termux.shared.logger.Logger;
-import com.termux.shared.termux.TermuxConstants;
+import dev.pschmitt.termux.shared.android.PermissionUtils;
+import dev.pschmitt.termux.shared.logger.Logger;
+import dev.pschmitt.termux.shared.termux.TermuxConstants;
 
 import java.util.ArrayList;
 

@@ -19,9 +19,9 @@ import androidx.annotation.RequiresPermission;
 import dev.pschmitt.termux.api.TermuxApiReceiver;
 import dev.pschmitt.termux.api.util.ResultReturner;
 import dev.pschmitt.termux.api.util.ResultReturner.ResultJsonWriter;
-import com.termux.shared.android.PermissionUtils;
-import com.termux.shared.logger.Logger;
-import com.termux.shared.termux.TermuxConstants;
+import dev.pschmitt.termux.shared.android.PermissionUtils;
+import dev.pschmitt.termux.shared.logger.Logger;
+import dev.pschmitt.termux.shared.termux.TermuxConstants;
 
 import java.io.IOException;
 import java.util.concurrent.CountDownLatch;

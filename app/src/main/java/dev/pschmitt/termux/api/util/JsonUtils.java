@@ -2,7 +2,7 @@ package dev.pschmitt.termux.api.util;
 
 import android.util.JsonWriter;
 
-import com.termux.shared.logger.Logger;
+import dev.pschmitt.termux.shared.logger.Logger;
 
 import java.io.IOException;
 

@@ -8,7 +8,7 @@ import android.provider.CallLog;
 import android.util.JsonWriter;
 
 import dev.pschmitt.termux.api.util.ResultReturner;
-import com.termux.shared.logger.Logger;
+import dev.pschmitt.termux.shared.logger.Logger;
 
 import java.io.IOException;
 import java.text.DateFormat;

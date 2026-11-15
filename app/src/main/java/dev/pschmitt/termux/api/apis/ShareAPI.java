@@ -15,8 +15,8 @@ import dev.pschmitt.termux.api.R;
 import dev.pschmitt.termux.api.TermuxAPIConstants;
 import dev.pschmitt.termux.api.TermuxApiReceiver;
 import dev.pschmitt.termux.api.util.ResultReturner;
-import com.termux.shared.logger.Logger;
-import com.termux.shared.net.uri.UriUtils;
+import dev.pschmitt.termux.shared.logger.Logger;
+import dev.pschmitt.termux.shared.net.uri.UriUtils;
 
 import java.io.File;
 import java.io.FileNotFoundException;

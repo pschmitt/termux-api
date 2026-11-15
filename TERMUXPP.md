@@ -2,7 +2,7 @@
 
 This fork targets `dev.pschmitt.termux` and installs as
 `dev.pschmitt.termux.api`. The API Java namespace is also
-`dev.pschmitt.termux.api`; shared library classes retain `com.termux.shared`.
+`dev.pschmitt.termux.api`; shared library classes retain `dev.pschmitt.termux.shared`.
 
 ## Build
 

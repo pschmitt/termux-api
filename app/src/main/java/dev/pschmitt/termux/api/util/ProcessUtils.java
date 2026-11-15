@@ -2,9 +2,9 @@ package dev.pschmitt.termux.api.util;
 
 import androidx.annotation.NonNull;
 
-import com.termux.shared.errors.Error;
-import com.termux.shared.file.FileUtils;
-import com.termux.shared.logger.Logger;
+import dev.pschmitt.termux.shared.errors.Error;
+import dev.pschmitt.termux.shared.file.FileUtils;
+import dev.pschmitt.termux.shared.logger.Logger;
 
 ////
 /// Utils for processes.
