@@ -4,8 +4,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -39,11 +44,12 @@ public class TermuxAPIMainActivity extends AppCompatActivity {
         Logger.logDebug(LOG_TAG, "onCreate");
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_termux_api_main);
-
-        // Set NightMode.APP_NIGHT_MODE
+        // Set NightMode.APP_NIGHT_MODE before inflating views.
         TermuxThemeUtils.setAppNightMode(this);
         AppCompatActivityUtils.setNightMode(this, NightMode.getAppNightMode().getName(), true);
+
+        setContentView(R.layout.activity_termux_api_main);
+        applySystemBarInsets();
 
         AppCompatActivityUtils.setToolbar(this, com.termux.shared.R.id.toolbar);
         AppCompatActivityUtils.setToolbarTitle(this, com.termux.shared.R.id.toolbar, TermuxConstants.TERMUX_API_APP_NAME, 0);
@@ -60,6 +66,23 @@ public class TermuxAPIMainActivity extends AppCompatActivity {
         mDisplayOverOtherAppsPermissionNotGrantedWarning = findViewById(R.id.textview_display_over_other_apps_not_granted_warning);
         mGrantDisplayOverOtherAppsPermission = findViewById(R.id.button_grant_display_over_other_apps_permission);
         mGrantDisplayOverOtherAppsPermission.setOnClickListener(v -> requestDisplayOverOtherAppsPermission());
+    }
+
+    private void applySystemBarInsets() {
+        View root = findViewById(R.id.api_main_root);
+        int initialLeft = root.getPaddingLeft();
+        int initialTop = root.getPaddingTop();
+        int initialRight = root.getPaddingRight();
+        int initialBottom = root.getPaddingBottom();
+
+        ViewCompat.setOnApplyWindowInsetsListener(root, (view, windowInsets) -> {
+            Insets insets = windowInsets.getInsets(
+                    WindowInsetsCompat.Type.systemBars() | WindowInsetsCompat.Type.displayCutout());
+            view.setPadding(initialLeft + insets.left, initialTop + insets.top,
+                    initialRight + insets.right, initialBottom + insets.bottom);
+            return windowInsets;
+        });
+        ViewCompat.requestApplyInsets(root);
     }
 
     @Override

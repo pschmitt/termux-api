@@ -9,6 +9,7 @@
 
 <resources>
     <string name="app_name">&TERMUX_API_APP_NAME;</string>
+    <string name="main_activity_heading">Permissions and background access</string>
     <string name="share_file_chooser_title">Share with</string>
     <string name="grant_permission">Grant permission</string>
     <string name="keep_alive_service">This service keeps Termux:API running in the background for faster startup of termux-* commands.</string>
