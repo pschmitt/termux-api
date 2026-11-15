@@ -3,11 +3,11 @@
 [![Build status](https://github.com/pschmitt/termuxpp-api/workflows/Build/badge.svg)](https://github.com/pschmitt/termuxpp-api/actions)
 [![Join the chat at https://gitter.im/termux/termux](https://badges.gitter.im/termux/termux.svg)](https://gitter.im/termux/termux)
 
-This is an app exposing Android API to command line usage and scripts or programs.
-
-When developing or packaging, note that this app needs to be signed with the same
-key as the main Termux app for permissions to work (only the main Termux app are
-allowed to call the API methods in this app).
+This fork exposes Android APIs to TermuxPP command-line tools and scripts. It uses the
+TermuxPP API app identity (`dev.pschmitt.termux.api`) and must be signed with the same
+certificate as TermuxPP core (`dev.pschmitt.termux`) for shared-UID and signature
+permission checks to work. Stock Termux API tools target the stock app identity and are
+not interchangeable with TermuxPP's native API helper tools.
 
 ## Installation
 
