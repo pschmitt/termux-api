@@ -27,7 +27,7 @@ key and is **public and untrusted**, suitable only for development. Production
 builds must use the same private signing key as the installed TermuxPP core.
 
 Install alongside stock Termux:API, not over it. Install the command-line tools
-from <https://github.com/pschmitt/termux-api-package>; the stock `termux-api`
+from <https://github.com/pschmitt/termuxpp-api-package>; the stock `termux-api`
 package targets the upstream app and is not interchangeable with this fork.
 Grant Android permissions only as needed. Test `termux-battery-status`, clipboard
 access, and a notification, including after force-stopping and reopening the app.
