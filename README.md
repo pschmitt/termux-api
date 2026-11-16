@@ -9,6 +9,11 @@ certificate as TermuxPP core (`dev.pschmitt.termux`) for shared-UID and signatur
 permission checks to work. Stock Termux API tools target the stock app identity and are
 not interchangeable with TermuxPP's native API helper tools.
 
+> **TermuxPP release channel:** New builds are published in the
+> [TermuxPP monorepo](https://github.com/pschmitt/termuxpp/releases/tag/latest).
+> Existing releases here remain available to older clients. See the
+> [self-update guide](https://github.com/pschmitt/termuxpp/blob/main/docs/en/self-update.md).
+
 ## Installation
 
 Latest version is `v0.53.0`.
